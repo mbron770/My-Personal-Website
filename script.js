@@ -1,3 +1,19 @@
+/*document.body.onload = showIndexWelcomeText;
+
+function showIndexWelcomeText1() {
+    const welcomeParagraph = document.createElement("h1");
+    welcomeParagraph.setAttribute("id", "welcomeParagraph");
+    const welcomeParagraphText = document.createTextNode("I am Mordechai Bronfin" + "\nFull Stack Developer. AWS Solutions Architect. The Flatiron School Student.");
+    welcomeParagraph.appendChild(welcomeParagraphText);
+   /* welcomeParagraph.appendChild("br");
+    welcomeParagraph.appendChild("Full Stack Developer. AWS Solutions Architect. The Flatiron School Student.");
+
+    document.getElementById("indexWelcomeTextDiv").appendChild(welcomeParagraph);
+   
+}*/
+
+
+
 function showIndexWelcomeTextH1() {
   const welcomeParagraph1 = document.createElement("h1");
   welcomeParagraph1.setAttribute("id", "welcomeParagraph1");
@@ -32,18 +48,33 @@ function addAboutParagraph2() {
   document.getElementById("indexWelcomeTextDiv").appendChild(aboutParagraph2);
 }
 
+function addExperienceTitle() {
+  const expTitle = document.createElement("h1");
+  expTitle.setAttribute("id", "expTitle");
+  expTitle.innerHTML = "Here is some of my Education and Work Experience";
+  document.getElementById("experienceTitle").appendChild(expTitle);
+}
+
+
+
+const page = window.open('experience.html')
+
+page.addEventListener('DOMContentLoaded', () => {
+  const expTitle = document.createElement("h1");
+  expTitle.setAttribute("id", "expTitle");
+  expTitle.innerHTML = "";
+  page.document.getElementById("experienceTitle").appendChild(expTitle);
+}); 
+
+
+
+
+
+
 showIndexWelcomeTextH1();
 showIndexWelcomeTextH2(); 
 addImageToIndex(); 
 addAboutParagraph1(); 
-
-
-
-
-
-
-
-
 
 
 
