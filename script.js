@@ -1,19 +1,3 @@
-/*document.body.onload = showIndexWelcomeText;
-
-function showIndexWelcomeText1() {
-    const welcomeParagraph = document.createElement("h1");
-    welcomeParagraph.setAttribute("id", "welcomeParagraph");
-    const welcomeParagraphText = document.createTextNode("I am Mordechai Bronfin" + "\nFull Stack Developer. AWS Solutions Architect. The Flatiron School Student.");
-    welcomeParagraph.appendChild(welcomeParagraphText);
-   /* welcomeParagraph.appendChild("br");
-    welcomeParagraph.appendChild("Full Stack Developer. AWS Solutions Architect. The Flatiron School Student.");
-
-    document.getElementById("indexWelcomeTextDiv").appendChild(welcomeParagraph);
-   
-}*/
-
-
-
 function showIndexWelcomeTextH1() {
   const welcomeParagraph1 = document.createElement("h1");
   welcomeParagraph1.setAttribute("id", "welcomeParagraph1");
@@ -66,6 +50,10 @@ page.addEventListener('DOMContentLoaded', () => {
   page.document.getElementById("experienceTitle").appendChild(expTitle);
 }); 
 
+const buttonInput = document.getElementById('button');
+buttonInput.addEventListener('click', function() {
+  alert('Are you sure you want to submit this form?');
+});
 
 
 

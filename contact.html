@@ -40,7 +40,42 @@
             </ul>
         </div>
       </nav>
-    <h1>contact.html</h1>
-    <script src="script.js"></script>
+    <h1 id = "contactHeader">Contact me</h1>
+    <form id = "contactForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="inputName">Name</label><br>
+          <input type="text" class="form-control" id="inputName" placeholder="Your name...">
+        </div>
+      </div>
+      <br>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="inputEmail4">Email</label><br>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Your Email...">
+        </div>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Your Message..."></textarea>
+      </div>
+      <br>
+      <!--
+<button onclick="contactAlert()" type="submit" class="btn btn-secondary btn-lg active">Submit</button>
+<script>
+        function contactAlert() {
+          alert("Are you sure you want to submit this form?");
+        }
+        </script>
+      -->
+      
+      <input id="button" type="button" value="Submit" class="btn btn-secondary btn-lg active"/>
+      
+
+     <script src="script.js"></script>   
+        
+      
+    </form>
   </body>
 </html>

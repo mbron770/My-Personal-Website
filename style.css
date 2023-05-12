@@ -83,6 +83,17 @@ text-align: left;
     background-color: rgb(203, 209, 214);
  }
 
+ #contactHeader
+ {
+    padding-top: 10px;
+    padding-left: 100px;
+ }
+
+ #contactForm {
+    padding-left: 200px; 
+    padding-right: 200px;
+ }
+
 
 
 
